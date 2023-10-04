@@ -1,0 +1,74 @@
+/* Calendar Container */
+.date-box {
+    border: 2px solid #007bff;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.date-box.today {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+/* Modal Styles */
+.modal-popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.modal-popup-content {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 300px;
+}
+
+.toggle-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-button.present {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.toggle-button.absent {
+    background-color: #4caf50;
+    color: white;
+}
+
+.close-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #ccc;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+    background-color: #ff6b6b;
+    color: white;
+}
